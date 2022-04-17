@@ -1,0 +1,46 @@
+.experience-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 5%;
+  width: 100%;
+}
+
+.company-logo {
+  display: flex;
+  justify-content: center;
+  margin: 0 3rem;
+}
+
+.textual-info {
+  margin-bottom: 2rem;
+  padding: 0 max(2ch, 3%);
+  width: minmax(400px, 70%);
+  width: max(50%, 400px);
+}
+
+.textual-info h2 {
+  font-size: 1.9rem;
+  margin: 3% 0;
+}
+
+.textual-info h3 {
+  font-size: 1.15rem;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  margin: 3% 0;
+}
+
+.textual-info h4 {
+  color: var(--light-gray);
+  font-size: smaller;
+  font-weight: unset;
+  margin: 3% 0;
+}
+
+.textual-info ul {
+  list-style: none;
+  font-size:  0.85rem;
+  padding-left: 1.5rem;
+}
