@@ -1,5 +1,7 @@
 import * as React from 'react';
 import NavigationBar from '../components/NavBar';
+import BasicInfo from '../components/Resume/BasicInfo';
+import CVInfo from '../components/Resume/CVInfo';
 import './global-style.css';
 
 const IndexPage = () => {
@@ -7,7 +9,9 @@ const IndexPage = () => {
     <>
       <NavigationBar/>
       <main>
-        <title>Home Page</title>
+        <title>Resumen</title>
+        <BasicInfo/>
+        <CVInfo/>
       </main>
     </>
   )

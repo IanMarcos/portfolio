@@ -1,0 +1,66 @@
+.cvinfo-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem 30%;
+  padding: 2rem 10%;
+}
+
+.cvinfo-section ul{
+  list-style: none;
+}
+
+.cvinfo-section ul li:before {
+  content:"•";
+  font-size:10pt;
+}
+
+.cvinfo-section h2{
+  font-size: 1.65rem;
+  margin-bottom: 0.8rem;
+}
+
+.cvinfo-section h3{
+  font-size: 1.15rem;
+  font-weight: 400;
+  padding-left: 5%;
+  margin: 0.8rem auto;
+}
+
+.cvinfo-section h4{
+  font-size: 1rem;
+  font-weight: 500;
+  padding-left: 10%;
+  margin: 0.8rem auto;
+}
+
+.cvinfo-section p{
+  color: var(--third-color);
+  display: inline;
+  font-size: 0.9rem;
+  font-weight: 300;
+  padding-left: 10%;
+}
+
+.cvinfo-section-medium{
+  width: 100%;
+}
+
+.cvinfo-section-company {
+  margin-bottom: 8%;
+}
+
+@media only screen and (min-width: 660px) {
+  .cvinfo-container {
+    display: grid;
+    grid-template: minmax(100px, auto) 1fr / repeat(6, 1fr);
+    gap: 3rem 1rem;
+  }
+
+  .cvinfo-section-small{
+    grid-column: span 2;
+  }
+  
+  .cvinfo-section-medium{
+    grid-column: span 3;
+  }
+}

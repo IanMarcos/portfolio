@@ -1,0 +1,46 @@
+.basic-info-container {
+  background: var(--main-color);
+  color: var(--background-white);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  top: -1rem;
+  z-index: 90;
+  padding: 1rem 2.5rem 0;
+}
+
+.basic-info-container h1 {
+  font-size: 2.7rem;
+}
+
+.basic-info {
+  padding: 1rem auto;
+  margin: 2rem auto;
+}
+
+.basic-info p {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.basic-info-line {
+  margin: 1rem auto;
+  display: flex;
+  column-gap: 0.8ch;
+}
+
+.textual-section {
+  margin-top: 3rem;
+}
+
+.profile-photo {
+  display: flex;
+  align-items: flex-end;
+}
+
+.resp-img{
+  max-width: 100%;
+  height: auto;
+}

@@ -5,14 +5,15 @@ li i {
 .navigation-bar {
   width: 100%;
   height: 3rem;
+  position: relative;
+  z-index: 100;
 }
 
 .navigation-bar ul{
-  background: var(--secondary-color);
+  background: var(--second-color);
   border-radius: 0 0 1rem 1rem;
   display: flex;
   list-style: none;
-  font-size: 0rem; /*Gets rid of whitespaces between li elements*/
   height: 100%;
 }
 
@@ -51,7 +52,7 @@ li i {
   top: -0.25rem;
 }
 
-@media only screen and (min-width: 530px) { 
+@media only screen and (min-width: 570px) { 
   .navigation-bar p {
     display: inline;
   }
