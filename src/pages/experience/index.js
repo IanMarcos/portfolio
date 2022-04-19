@@ -1,9 +1,9 @@
 import * as React from 'react';
-import NavigationBar from '../components/NavBar';
-import CompanyInfo from "../components/Experience/CompanyInfo";
-import { experienceContainer } from "../styles/experience.module.css";
-import logoUdea from "../images/logo-udea.png";
-import logoCarvajal from "../images/logo-carvajal.png";
+import NavigationBar from '../../components/NavBar';
+import CompanyInfo from "../../components/Experience/CompanyInfo";
+import { experienceContainer } from "./style.module.css";
+import logoUdea from "../../images/logo-udea.png";
+import logoCarvajal from "../../images/logo-carvajal.png";
 
 const Experience = () => {
   const udea = {

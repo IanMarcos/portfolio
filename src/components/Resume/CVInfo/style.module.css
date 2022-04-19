@@ -5,11 +5,7 @@
   padding: 2rem 10%;
 }
 
-.cvinfo-section ul{
-  list-style: none;
-}
-
-.cvinfo-section ul li:before {
+.cvinfo-section ul li::before {
   content:"•";
   font-size:10pt;
 }
