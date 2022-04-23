@@ -1,6 +1,6 @@
 .basic-info-container {
   background: var(--main-color);
-  color: var(--background-white);
+  color: var(--white);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -38,9 +38,4 @@
 .profile-photo {
   display: flex;
   align-items: flex-end;
-}
-
-.resp-img{
-  max-width: 100%;
-  height: auto;
 }

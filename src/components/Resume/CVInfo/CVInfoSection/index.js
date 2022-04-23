@@ -6,7 +6,7 @@ const CVInfoSectionA = ({ title, elements }) => {
   return (
     <div className={`${cvinfoSection} ${cvinfoSectionSmall}`}>
       <h2>{title}</h2>
-      <ul>
+      <ul className='dotted-list'>
         {elements.map(item => (
           <li key={item}>
             <p>{item}</p>

@@ -43,3 +43,8 @@
   font-size:  0.85rem;
   padding-left: 1.5rem;
 }
+
+.textual-info p {
+  display: inline;
+  padding-left: 1rem;
+}

@@ -1,3 +1,5 @@
+/*========================CSS Reset========================*/
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -22,14 +24,22 @@ time {
 	--main-color: rgb(4,139,194);
 	--second-color: rgb(30, 40, 55);
 	--third-color: rgb(60, 70, 85);
-	--fourth-color: rgb(20, 25, 30);
-	--background-white: rgb(247, 244, 240);
+	--white: rgb(247, 244, 240);
 	--light-gray: rgb(130, 130, 130);
+	--bkg-color: var(--white);
+	--font-color: rgb(40, 35, 35);
+
 }
-  
+
+ol, ul {
+	list-style: none;
+}
+
+/*========================Global Styles========================*/
+
 html, body {
-	background: var(--background-white);
-	color: rgb(40, 35, 35);
+	background: var(--bkg-color);
+	color: var(--font-color);
 	font-size: 18px;
 	font-family: 'Open Sans', 'Gill Sans', sans-serif;
 	min-width: 400px;
@@ -38,10 +48,6 @@ html, body {
 h1, h2, h3 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 200;
-}
-
-ol, ul {
-	list-style: none;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -54,4 +60,16 @@ ol, ul {
   html, body {
 		font-size: 22px;
 	}
+}
+
+/*========================Global Classes========================*/
+
+.dotted-list li::before {
+  content:"•";
+  font-size:10pt;
+}
+
+.resp-img{
+  max-width: 100%;
+  height: auto;
 }

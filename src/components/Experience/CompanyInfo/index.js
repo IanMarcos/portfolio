@@ -8,16 +8,16 @@ const CompanyInfo = ({ company, duties, img, position, workTime }) => {
         <h2>{position}</h2>
         <h3>{company}</h3>
         <h4>{workTime}</h4>
-        <ul>
+        <ul className='dotted-list'>
           {
             duties.map((duty, i) => (
-              <li key={duty.concat(i)}>{duty}</li>
+              <li key={duty.concat(i)}><p>{duty}</p></li>
             ))
           }
         </ul>
       </div>
       <div className={companyLogo}>
-        <img src={img} alt="Logo de la empresa"/>
+        <img src={img} alt="Logo de la empresa" className='resp-img'/>
       </div>
     </div>
   )

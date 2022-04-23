@@ -36,7 +36,7 @@ li i {
 }
 
 .navigation-bar a {
-  color: var(--background-white);
+  color: var(--white);
   display: block;
   height: 100%;
   text-decoration: none;

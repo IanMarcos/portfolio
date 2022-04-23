@@ -5,8 +5,7 @@ import {
   textualSection,
   basicInfo,
   basicInfoLine,
-  profilePhoto,
-  respImg
+  profilePhoto
 } from './style.module.css';
 import profilePic from '../../../images/foto.png';
 
@@ -30,7 +29,7 @@ const BasicInfo = () => (
         </div>
       </div>
       <div className={profilePhoto}>
-        <img src={profilePic} alt='Foto de Ian Marcos' className={respImg}/>
+        <img src={profilePic} alt='Foto de Ian Marcos' className="resp-img"/>
       </div>
   </section>
 )
