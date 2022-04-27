@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import NavigationBar from '../../components/NavBar';
 import CompanyInfo from "../../components/Experience/CompanyInfo";
 import { experienceContainer } from "./style.module.css";

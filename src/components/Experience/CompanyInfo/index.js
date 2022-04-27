@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { companyLogo, experienceInfo, textualInfo } from './style.module.css';
 
 const CompanyInfo = ({ company, duties, img, position, workTime }) => {

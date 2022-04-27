@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { BsEnvelope, BsGeoAlt, BsJournal } from 'react-icons/bs';
 import MainContainer from '../MainContainer';
 import {

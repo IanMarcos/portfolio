@@ -3,7 +3,6 @@ import ImageSlider from '../components/Knowledge/ImageSlider';
 import KnowledgeSectionBars from '../components/Knowledge/KnowledgeSection';
 import NavigationBar from '../components/NavBar';
 import FlexContainer from '../components/Resume/FlexContainer';
-// import { } from './style.module.css';
 
 const Knowledge = () => {
 

@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { Link } from "gatsby";
 
 const NotFoundPage = () => {
@@ -8,5 +8,4 @@ const NotFoundPage = () => {
     </main>
   )
 }
-
 export default NotFoundPage;
