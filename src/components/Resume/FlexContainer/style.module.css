@@ -1,0 +1,13 @@
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem 20%;
+  padding: 2rem 10%;
+}
+
+@media only screen and (min-width: 950px) {
+  .flex-container {
+    justify-content: center;
+    column-gap: 20%;
+  }
+}

@@ -1,0 +1,23 @@
+.knowledge-section {
+  flex: 1;
+}
+
+.knowledge-section h2{
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.knowledge-section p{
+  display: inline;
+  font-weight: lighter;
+  font-size: 0.9rem;
+  margin-right: 3ch;
+  text-align: end;
+  width: 18%;
+}
+
+.bar-container {
+  display: flex;
+  justify-content: center;
+}

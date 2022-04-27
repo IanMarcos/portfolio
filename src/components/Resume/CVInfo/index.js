@@ -1,6 +1,6 @@
-import * as React from 'react';
+import React from 'react';
 import { CVInfoSectionA, CVInfoSectionB } from './CVInfoSection';
-import { cvinfoContainer } from './style.module.css'
+import FlexContainer from '../FlexContainer';
 
 const CVInfo = () => {
 
@@ -31,12 +31,16 @@ const CVInfo = () => {
   }];
 
   return (
-    <section className={cvinfoContainer}>
-      <CVInfoSectionA title={'Idiomas'} elements={languages} />
-      <CVInfoSectionA title={'Lenguajes'} elements={programmingLang} />
-      <CVInfoSectionA title={'Tecnologías'} elements={technologies} />
-      <CVInfoSectionB title={'Formación Académica'} elements={studies} />
-      <CVInfoSectionB title={'Experiencia'} elements={experience} />
+    <section>
+      <FlexContainer>
+        <CVInfoSectionA title={'Idiomas'} elements={languages} />
+        <CVInfoSectionA title={'Lenguajes'} elements={programmingLang} />
+        <CVInfoSectionA title={'Tecnologías'} elements={technologies} />
+      </FlexContainer>
+      <FlexContainer>
+        <CVInfoSectionB title={'Formación Académica'} elements={studies} />
+        <CVInfoSectionB title={'Experiencia'} elements={experience} />
+      </FlexContainer>
     </section>
   )
 }

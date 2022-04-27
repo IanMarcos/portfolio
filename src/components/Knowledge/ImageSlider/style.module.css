@@ -1,0 +1,11 @@
+.carousel-container {
+  display: flex;
+  align-items: center;
+  padding: min(10%, 5rem) 0;
+}
+
+.carousel-container img{
+  object-fit: contain;
+  max-height: 35vh;
+  width: auto;
+}

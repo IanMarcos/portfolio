@@ -1,0 +1,12 @@
+.main-container {
+  background: var(--main-color);
+  color: var(--white);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.main-container h1 {
+  font-size: 2.7rem;
+}

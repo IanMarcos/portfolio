@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { shuffleString } from '../../../../utils/random';
 import { cvinfoSection, cvinfoSectionSmall, cvinfoSectionMedium, cvinfoSectionCompany } from '../style.module.css';
 

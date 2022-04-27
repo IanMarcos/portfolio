@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import NavigationBar from '../components/NavBar';
 import BasicInfo from '../components/Resume/BasicInfo';
 import CVInfo from '../components/Resume/CVInfo';
@@ -10,7 +10,9 @@ const IndexPage = () => {
       <NavigationBar/>
       <main>
         <title>Resumen</title>
-        <BasicInfo/>
+        <section className='top-minus-one'>
+          <BasicInfo/>
+        </section>
         <CVInfo/>
       </main>
     </>
