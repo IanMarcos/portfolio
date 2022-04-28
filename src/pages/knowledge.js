@@ -1,7 +1,7 @@
 import React from 'react';
 import ImageSlider from '../components/Knowledge/ImageSlider';
 import KnowledgeSectionBars from '../components/Knowledge/KnowledgeSection';
-import NavigationBar from '../components/NavBar';
+import Layout from '../components/Layout';
 import FlexContainer from '../components/Resume/FlexContainer';
 
 const Knowledge = () => {
@@ -28,20 +28,16 @@ const Knowledge = () => {
   ];
 
   return (
-    <>
-      <NavigationBar />
-      <title>Conocimientos</title>
-      <main>
-        <section className='top-minus-one'>
-          <ImageSlider imgArr={imgArr}/>
-        </section>
-        <FlexContainer>
-          <KnowledgeSectionBars title={'Idiomas'} elements={languages} />
-          <KnowledgeSectionBars title={'Programación'} elements={programing} />
-          <KnowledgeSectionBars title={'Tecnologías'} elements={tools} />
-        </FlexContainer>
-      </main>
-    </>
+    <Layout title="Conocimientos">
+      <section className='top-minus-one'>
+        <ImageSlider imgArr={imgArr} />
+      </section>
+      <FlexContainer>
+        <KnowledgeSectionBars title={'Idiomas'} elements={languages} />
+        <KnowledgeSectionBars title={'Programación'} elements={programing} />
+        <KnowledgeSectionBars title={'Tecnologías'} elements={tools} />
+      </FlexContainer>
+    </Layout>
   )
 }
 export default Knowledge;

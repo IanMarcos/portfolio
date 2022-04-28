@@ -19,20 +19,23 @@ time {
 	vertical-align: baseline;
 	box-sizing: border-box;
 }
+
+ol, ul {
+	list-style: none;
+}
   
 :root {
+  /*==========Color palette==========*/
 	--main-color: rgb(4,139,194);
 	--second-color: rgb(30, 40, 55);
 	--third-color: rgb(60, 70, 85);
 	--white: rgb(247, 244, 240);
 	--light-gray: rgb(130, 130, 130);
+
+  /*==========Ligth theme==========*/
 	--bkg-color: var(--white);
 	--font-color: rgb(40, 35, 35);
-
-}
-
-ol, ul {
-	list-style: none;
+  --footer-bkg: rgb(223, 222, 217);
 }
 
 /*========================Global Styles========================*/
@@ -63,6 +66,16 @@ h1, h2, h3 {
 }
 
 /*========================Global Classes========================*/
+
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-content {
+  flex-grow: 1;
+}
 
 .dotted-list li::before {
   content:"•";

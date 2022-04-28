@@ -1,10 +1,10 @@
 import React from 'react';
 import { shuffleString } from '../../../../utils/random';
-import { cvinfoSection, cvinfoSectionSmall, cvinfoSectionMedium, cvinfoSectionCompany } from '../style.module.css';
+import { cvinfoSection, cvinfoSectionMedium, cvinfoSectionCompany } from '../style.module.css';
 
 const CVInfoSectionA = ({ title, elements }) => {
   return (
-    <div className={`${cvinfoSection} ${cvinfoSectionSmall}`}>
+    <div className={cvinfoSection}>
       <h2>{title}</h2>
       <ul className='dotted-list'>
         {elements.map(item => (

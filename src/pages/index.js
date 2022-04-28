@@ -1,21 +1,17 @@
 import React from 'react';
-import NavigationBar from '../components/NavBar';
+import Layout from '../components/Layout';
 import BasicInfo from '../components/Resume/BasicInfo';
 import CVInfo from '../components/Resume/CVInfo';
 import '../styles/global-style.css';
 
 const IndexPage = () => {
   return (
-    <>
-      <NavigationBar/>
-      <main>
-        <title>Resumen</title>
-        <section className='top-minus-one'>
-          <BasicInfo/>
-        </section>
-        <CVInfo/>
-      </main>
-    </>
+    <Layout title="Resumen">
+      <section className='top-minus-one'>
+        <BasicInfo />
+      </section>
+      <CVInfo />
+    </Layout>
   )
 }
 export default IndexPage;

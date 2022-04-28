@@ -1,6 +1,6 @@
 import React from 'react';
-import NavigationBar from '../../components/NavBar';
 import CompanyInfo from "../../components/Experience/CompanyInfo";
+import Layout from '../../components/Layout';
 import { experienceContainer } from "./style.module.css";
 import logoUdea from "../../images/logo-udea.png";
 import logoCarvajal from "../../images/logo-carvajal.png";
@@ -31,16 +31,12 @@ const Experience = () => {
   }
 
   return (
-    <>
-      <NavigationBar />
-      <main>
-        <title>Experiencia</title>
+    <Layout title="Experiencia">
         <div className={experienceContainer}>
           <CompanyInfo {...udea} />
           <CompanyInfo {...carvajal} />
         </div>
-      </main>
-    </>
+    </Layout>
   )
 }
 export default Experience;

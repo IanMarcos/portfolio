@@ -1,0 +1,33 @@
+footer {
+  background: var(--footer-bkg);
+  height: minmax(300px, 500px);
+  position: relative;
+  bottom: 0;
+}
+
+footer a{
+  color: var(--font-color);
+}
+
+footer h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0.8rem;
+}
+
+footer li{
+  display: inline;
+  margin-right: 1rem;
+}
+
+footer p{
+  font-size: 0.75rem;
+  text-align: center;
+  position: relative;
+  bottom: 1.2rem;
+}
+
+.footer-container {
+  height: 100%;
+  padding: min(10%, 4.5rem) 10% calc(min(10%, 4.5rem) + 0.9rem);
+}
