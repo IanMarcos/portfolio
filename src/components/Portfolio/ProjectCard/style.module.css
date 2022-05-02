@@ -1,0 +1,31 @@
+.project-item {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.project-container {
+  background: var(--third-color);
+  border-radius: 15rem;
+  width: min(80%, 35rem);
+  height: min(12vh, 8rem);
+  display: flex;
+  align-items: center;
+}
+
+.project-text {
+  color: var(--white);
+  padding: 0 1ch 0 1.5ch;
+  font-size: 0.9rem;
+  width: 70%;
+  text-align: center;
+}
+
+.project-img {
+  position: relative;
+  right: -3px;
+  background-size: cover;
+  border-radius: 15rem;
+  width: 30%;
+  height: 100%;
+}

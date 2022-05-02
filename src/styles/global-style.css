@@ -23,12 +23,14 @@ time {
 ol, ul {
 	list-style: none;
 }
+
+/*========================Global Styles========================*/
   
 :root {
   /*==========Color palette==========*/
 	--main-color: rgb(4,139,194);
 	--second-color: rgb(30, 40, 55);
-	--third-color: rgb(60, 70, 85);
+	--third-color: rgb(50, 76, 94);
 	--white: rgb(247, 244, 240);
 	--light-gray: rgb(130, 130, 130);
 
@@ -37,8 +39,6 @@ ol, ul {
 	--font-color: rgb(40, 35, 35);
   --footer-bkg: rgb(223, 222, 217);
 }
-
-/*========================Global Styles========================*/
 
 html, body {
 	background: var(--bkg-color);
@@ -51,6 +51,11 @@ html, body {
 h1, h2, h3 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 200;
+}
+
+a {
+  color: var(--font-color);
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 1000px) {
