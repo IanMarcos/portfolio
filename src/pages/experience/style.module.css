@@ -1,7 +1,6 @@
 .experience-container {
   display: flex;
   flex-direction: column;
-  align-self: center;
   max-width: 1200px;
   margin: min(8%, 3rem) auto;
 }
