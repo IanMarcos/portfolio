@@ -70,9 +70,21 @@ button {
 	}
 }
 
-@media only screen and (min-width: 2500px) {
+@media only screen and (min-width: 1980px) {
   html, body {
-		font-size: 22px;
+		font-size: 20px;
+	}
+}
+
+@media only screen and (min-width: 3000px) {
+  html, body {
+		font-size: 25px;
+	}
+}
+
+@media only screen and (min-width: 4000px) {
+  html, body {
+		font-size: 30px;
 	}
 }
 
@@ -91,6 +103,11 @@ button {
 .dotted-list li::before {
   content:"•";
   font-size:10pt;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
 }
 
 .resp-img {

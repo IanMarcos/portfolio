@@ -1,6 +1,6 @@
 .experience-container {
   display: flex;
   flex-direction: column;
-  max-width: 1200px;
-  margin: min(8%, 3rem) auto;
+  margin: min(8%, 3rem) 0;
+  min-width: 55%;
 }

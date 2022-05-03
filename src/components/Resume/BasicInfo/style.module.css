@@ -24,5 +24,7 @@
 
 .profile-photo {
   display: flex;
+  justify-content: center;
   align-items: flex-end;
+  width: max(25%, 400px);
 }

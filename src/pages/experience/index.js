@@ -31,7 +31,7 @@ const Experience = () => {
   }
 
   return (
-    <Layout title="Experiencia">
+    <Layout title="Experiencia" customClass="justify-center">
         <div className={experienceContainer}>
           <CompanyInfo {...udea} />
           <CompanyInfo {...carvajal} />
