@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import BasicInfo from '../components/Resume/BasicInfo';
 import CVInfo from '../components/Resume/CVInfo';
+import BasicInfo from '../components/Resume/BasicInfo';
 import '../styles/global-style.css';
 
 const IndexPage = () => {

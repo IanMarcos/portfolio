@@ -1,17 +1,17 @@
 import React from 'react';
-import ImageSlider from '../components/Knowledge/ImageSlider';
-import KnowledgeSectionBars from '../components/Knowledge/KnowledgeSection';
 import Layout from '../components/Layout';
 import FlexContainer from '../components/Resume/FlexContainer';
+import ImageSlider from '../components/Knowledge/ImageSlider';
+import KnowledgeSectionBars from '../components/Knowledge/KnowledgeSection';
+
+import js from '../images/js.png';
+import python from '../images/python.png';
+import node from '../images/node.png';
+import react from '../images/react.png';
 
 const Knowledge = () => {
 
-  const imgArr = {
-    js: 'https://github.com/IanMarcos/personal-assets/blob/main/curriculum-vitae/js.png?raw=true',
-    python: 'https://github.com/IanMarcos/personal-assets/blob/main/curriculum-vitae/python.png?raw=true',
-    node: 'https://github.com/IanMarcos/personal-assets/blob/main/curriculum-vitae/node.png?raw=true',
-    react: 'https://github.com/IanMarcos/personal-assets/blob/main/curriculum-vitae/react.png?raw=true',
-  };
+  const imgArr = { js, python, node, react };
 
   const languages = [
     { name: 'Español', percentage: '100' },
