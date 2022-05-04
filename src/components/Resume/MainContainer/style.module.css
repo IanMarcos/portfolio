@@ -1,5 +1,6 @@
 .main-container {
   background: var(--main-color);
+  background: radial-gradient(circle, var(--main-color) 0%, var(--main-color) 46%, rgb(67,157,194) 98%);
   color: var(--white);
   display: flex;
   flex-wrap: wrap;

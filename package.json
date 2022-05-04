@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "0.5.2",
+  "version": "0.6.0",
   "private": true,
   "description": "portfolio",
   "author": "Ian Marcos",
@@ -17,6 +17,8 @@
   "dependencies": {
     "gatsby": "^4.12.1",
     "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-manifest": "^4.13.0",
+    "gatsby-plugin-offline": "^5.13.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-icons": "^4.3.1",

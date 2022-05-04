@@ -17,7 +17,7 @@ const NavigationBar = () => {
         </Link></li>
         <li><Link to="/knowledge">
           <VscMortarBoard size={18} />
-          <p>Estudios</p>
+          <p>Conocimientos</p>
         </Link></li>
         <li><Link to="/experience">
           <VscAccount size={18} />
