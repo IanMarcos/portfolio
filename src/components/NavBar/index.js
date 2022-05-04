@@ -11,9 +11,9 @@ const NavigationBar = () => {
           <VscOutput size={18} />
           <p>Resumen</p>
         </Link></li>
-        <li><Link to="/portfolio">
+        <li><Link to="/projects">
           <VscCode size={18} />
-          <p>Portafolio</p>
+          <p>Proyectos</p>
         </Link></li>
         <li><Link to="/knowledge">
           <VscMortarBoard size={18} />

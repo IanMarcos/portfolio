@@ -1,10 +1,10 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import ProjectCard from '../components/Portfolio/ProjectCard';
+import ProjectCard from '../components/Projects/ProjectCard';
 import chat from '../images/chat.jpg';
 import productAPI from '../images/productAPI.jpg';
 
-const Portfolio = () => {
+const Projects = () => {
   //Add to this array any new project
   const projects = [
     {
@@ -32,4 +32,4 @@ const Portfolio = () => {
     </Layout>
   )
 }
-export default Portfolio;
+export default Projects;

@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Portfolio`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://ianmarcos.github.io/portfolio`,
   },
+  pathPrefix: `/portfolio`,
   plugins: [
     {
       resolve: `gatsby-plugin-google-fonts`,
