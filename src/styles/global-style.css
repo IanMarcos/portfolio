@@ -45,7 +45,7 @@ html, body {
 	color: var(--font-color);
 	font-size: 18px;
 	font-family: 'Open Sans', 'Gill Sans', sans-serif;
-	min-width: 400px;
+	min-width: 320px;
 }
 
 h1, h2, h3 {
