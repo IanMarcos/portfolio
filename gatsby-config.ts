@@ -14,7 +14,7 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: ['anton', 'montserrat:200,400', 'open sans:300,400'],
+        fonts: ['anton', 'montserrat:200,300,400', 'open sans:300,400,600'],
         display: 'swap',
       },
     },

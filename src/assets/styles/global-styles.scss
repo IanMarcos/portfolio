@@ -1,4 +1,5 @@
 @import 'colours';
+@import 'breakpoints';
 
 /*========================CSS Reset========================*/
 html,
@@ -98,14 +99,14 @@ body {
   color: $font-color;
   font-size: 18px;
   font-family: 'Open Sans', 'Gill Sans', sans-serif;
-  min-width: 320px;
+  min-width: $xs;
 }
 
 h1,
 h2,
 h3 {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 a {
@@ -119,62 +120,30 @@ button {
   cursor: pointer;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: $lg) {
   html,
   body {
     font-size: 16px;
   }
 }
 
-@media only screen and (min-width: 1980px) {
+@media only screen and (min-width: $xxl) {
   html,
   body {
     font-size: 20px;
   }
 }
 
-@media only screen and (min-width: 3000px) {
+@media only screen and (min-width: $xxxl) {
   html,
   body {
     font-size: 25px;
   }
 }
 
-@media only screen and (min-width: 4000px) {
+@media only screen and (min-width: $x4k) {
   html,
   body {
     font-size: 30px;
   }
-}
-
-/*========================Global Classes========================*/
-
-.site {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.site-content {
-  flex-grow: 1;
-}
-
-.dotted-list li::before {
-  content: '•';
-  font-size: 10pt;
-}
-
-.justify-center {
-  display: flex;
-  justify-content: center;
-}
-
-.resp-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.top-minus-one {
-  position: relative;
-  top: -1rem;
 }
