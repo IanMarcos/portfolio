@@ -1,0 +1,51 @@
+@import 'colours';
+
+.resume-header-container {
+  background: $main-color;
+  background: radial-gradient(
+    circle,
+    $main-color 0%,
+    $main-color 46%,
+    rgb(67, 157, 194) 98%
+  );
+  color: $white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+
+  h1 {
+    font-size: 2.7rem;
+  }
+}
+
+.basic-info {
+  padding: 1rem auto;
+  margin: 2rem auto;
+
+  p {
+    font-size: 0.9rem;
+    font-weight: 300;
+  }
+}
+
+.basic-info-line {
+  margin: 1rem auto;
+  display: flex;
+  column-gap: 0.8ch;
+}
+
+.basic-info-pad {
+  padding: 1rem 2.5rem 0;
+}
+
+.textual-section {
+  margin-top: 3rem;
+}
+
+.profile-photo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: max(25%, 400px);
+}
