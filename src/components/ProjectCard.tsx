@@ -1,21 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaLaptop, FaLaptopCode } from 'react-icons/fa6';
 import { BiSolidServer } from 'react-icons/bi';
+import { Project } from '../types/Project';
 import strings from 'assets/strings/en.json';
 import 'assets/styles/ProjectCard.scss';
 
-type ProjectCategory = 'Frontend' | 'Backend' | 'Fullstack';
-type Project = {
-  name: string;
-  category: ProjectCategory;
-  description?: string;
-  linkToFront?: string;
-  linkToBack?: string;
-  image: string | undefined;
-  imageAlt: string;
-};
-
 const ProjectCard = ({ project }: { project: Project }) => {
+  const [imgSrc, setImgSrc] = useState('');
+
   const renderIcon = () => {
     switch (project.category) {
       case 'Frontend':
@@ -67,9 +59,20 @@ const ProjectCard = ({ project }: { project: Project }) => {
     return null;
   };
 
+  const setImage = async () => {
+    if (project.image?.slice(0, 8) === 'https://') {
+      setImgSrc(project.image);
+    }
+
+    const image = await import(`assets/images/${project.image}`);
+    setImgSrc(image.default);
+  };
+
+  setImage();
+
   return (
     <div className="project-card">
-      <img src={project.image} alt={project.imageAlt} />
+      <img src={imgSrc} alt={project.imageAlt} />
       <div className="project-card-overlay">
         <div className="project-card-header">
           <h3>{project.name}</h3>
