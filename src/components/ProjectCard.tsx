@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaLaptop, FaLaptopCode } from 'react-icons/fa6';
 import { BiSolidServer } from 'react-icons/bi';
-import { Project } from '../types/Project';
+import { Project, CODE_CATEGORIES } from '../types/Project';
 import strings from 'assets/strings/en.json';
 import 'assets/styles/ProjectCard.scss';
 
@@ -10,13 +10,13 @@ const ProjectCard = ({ project }: { project: Project }) => {
 
   const renderIcon = () => {
     switch (project.category) {
-      case 'Frontend':
+      case CODE_CATEGORIES.FRONTEND:
         return <FaLaptop />;
 
-      case 'Backend':
+      case CODE_CATEGORIES.BACKEND:
         return <BiSolidServer />;
 
-      case 'Fullstack':
+      case CODE_CATEGORIES.FULLSTACK:
         return <FaLaptopCode />;
 
       default:
@@ -29,15 +29,15 @@ const ProjectCard = ({ project }: { project: Project }) => {
     const frontLink = <a href={linkToFront}>{strings.BtnCheckFront}</a>;
     const backLink = <a href={linkToBack}>{strings.BtnCheckBack}</a>;
 
-    if (category === 'Frontend' && linkToFront) {
+    if (category === CODE_CATEGORIES.FRONTEND && linkToFront) {
       return frontLink;
     }
 
-    if (category === 'Backend' && linkToBack) {
+    if (category === CODE_CATEGORIES.BACKEND && linkToBack) {
       return backLink;
     }
 
-    if (category === 'Fullstack') {
+    if (category === CODE_CATEGORIES.FULLSTACK) {
       if (linkToFront && linkToBack) {
         return (
           <>
