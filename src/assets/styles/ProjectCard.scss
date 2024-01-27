@@ -1,0 +1,57 @@
+@import 'colours';
+
+.project-card {
+  position: relative;
+  background-color: rgba($color: $white, $alpha: 0);
+  width: 18rem;
+  height: 27rem;
+
+  img {
+    position: absolute;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.project-card-overlay {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  z-index: 10;
+  height: 100%;
+  row-gap: 2rem;
+  color: $white;
+  padding: 2rem 1.5rem;
+
+  &:hover {
+    border-radius: 0.5rem;
+    background-color: rgba($color: $dark-gray, $alpha: 0.5);
+  }
+}
+
+.project-card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.code-type {
+  display: flex;
+  align-items: center;
+  column-gap: 0.25rem;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 1.5rem;
+  font-size: 0.85rem;
+
+  a {
+    padding: 0.5rem;
+    border-radius: 0.75rem;
+    background-color: $light-gray;
+  }
+}
