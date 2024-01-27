@@ -1,31 +1,85 @@
 import React from 'react';
 import { FaLaptop, FaLaptopCode } from 'react-icons/fa6';
 import { BiSolidServer } from 'react-icons/bi';
+import strings from 'assets/strings/en.json';
 import 'assets/styles/ProjectCard.scss';
 
-const ProjectCard = () => {
+type ProjectCategory = 'Frontend' | 'Backend' | 'Fullstack';
+type Project = {
+  name: string;
+  category: ProjectCategory;
+  description?: string;
+  linkToFront?: string;
+  linkToBack?: string;
+  image: string | undefined;
+  imageAlt: string;
+};
+
+const ProjectCard = ({ project }: { project: Project }) => {
+  const renderIcon = () => {
+    switch (project.category) {
+      case 'Frontend':
+        return <FaLaptop />;
+
+      case 'Backend':
+        return <BiSolidServer />;
+
+      case 'Fullstack':
+        return <FaLaptopCode />;
+
+      default:
+        return null;
+    }
+  };
+
+  const renderLinks = () => {
+    const { category, linkToFront, linkToBack } = project;
+    const frontLink = <a href={linkToFront}>{strings.BtnCheckFront}</a>;
+    const backLink = <a href={linkToBack}>{strings.BtnCheckBack}</a>;
+
+    if (category === 'Frontend' && linkToFront) {
+      return frontLink;
+    }
+
+    if (category === 'Backend' && linkToBack) {
+      return backLink;
+    }
+
+    if (category === 'Fullstack') {
+      if (linkToFront && linkToBack) {
+        return (
+          <>
+            {frontLink}
+            {backLink}
+          </>
+        );
+      }
+
+      if (linkToFront && !linkToBack) {
+        return frontLink;
+      }
+
+      if (!linkToFront && linkToBack) {
+        return backLink;
+      }
+    }
+
+    return null;
+  };
+
   return (
     <div className="project-card">
-      <img
-        src="https://steamuserimages-a.akamaihd.net/ugc/2276071244592363981/095D06E4E153CBE8B7535F4A442B92AD303C9888/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"
-        alt="Project picture"
-      />
+      <img src={project.image} alt={project.imageAlt} />
       <div className="project-card-overlay">
         <div className="project-card-header">
-          <h3>Project 1</h3>
+          <h3>{project.name}</h3>
           <span className="code-type">
-            <FaLaptopCode />
-            Frontend
+            {renderIcon()}
+            {project.category}
           </span>
         </div>
-        <p>
-          I'm but a humble short description of the project. Lorem ipsum dolor
-          sit amet, consectetur porttitor.
-        </p>
-        <div className="project-links">
-          <a>Check front</a>
-          <a>Check back</a>
-        </div>
+        {project.description ? <p>{project.description}</p> : null}
+        <div className="project-links">{renderLinks()}</div>
       </div>
     </div>
   );
