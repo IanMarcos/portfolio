@@ -25,35 +25,25 @@ const ProjectCard = ({ project }: { project: Project }) => {
   };
 
   const renderLinks = () => {
-    const { category, linkToFront, linkToBack } = project;
+    const { linkToFront, linkToBack } = project;
     const frontLink = <a href={linkToFront}>{strings.BtnCheckFront}</a>;
     const backLink = <a href={linkToBack}>{strings.BtnCheckBack}</a>;
 
-    if (category === CODE_CATEGORIES.FRONTEND && linkToFront) {
+    if (linkToFront && linkToBack) {
+      return (
+        <>
+          {frontLink}
+          {backLink}
+        </>
+      );
+    }
+
+    if (linkToFront && !linkToBack) {
       return frontLink;
     }
 
-    if (category === CODE_CATEGORIES.BACKEND && linkToBack) {
+    if (!linkToFront && linkToBack) {
       return backLink;
-    }
-
-    if (category === CODE_CATEGORIES.FULLSTACK) {
-      if (linkToFront && linkToBack) {
-        return (
-          <>
-            {frontLink}
-            {backLink}
-          </>
-        );
-      }
-
-      if (linkToFront && !linkToBack) {
-        return frontLink;
-      }
-
-      if (!linkToFront && linkToBack) {
-        return backLink;
-      }
     }
 
     return null;

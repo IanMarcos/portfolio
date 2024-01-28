@@ -26,9 +26,9 @@
     },
     {
       "name": "Clothes API",
-      "category": "Fullstack",
-      "description": "API to create products",
-      "linkToFront": "https://ianmarcos.github.io/clothes-api-form/",
+      "category": "Backend",
+      "description": "API created with Express to create garment products",
+      "linkToBack": "https://ianmarcos.github.io/clothes-api-form/",
       "image": "clothes-api.png",
       "imageAlt": "Capture of a form created to demo the API"
     }
