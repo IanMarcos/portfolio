@@ -11,7 +11,7 @@
     {
       "name": "Youtube clone",
       "category": "Frontend",
-      "description": "App done for a Uni course",
+      "description": "App done as a small challenge for myself. The mainpage and search bar consume the Youtube API",
       "linkToFront": "https://youtube-clone-ianortiz.vercel.app/",
       "image": "youtube-clone.png",
       "imageAlt": "Capture of the app's mainpage"
@@ -27,7 +27,7 @@
     {
       "name": "Clothes API",
       "category": "Fullstack",
-      "description": "Technical test",
+      "description": "API to create products",
       "linkToFront": "https://ianmarcos.github.io/clothes-api-form/",
       "image": "clothes-api.png",
       "imageAlt": "Capture of a form created to demo the API"
