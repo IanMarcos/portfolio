@@ -1,0 +1,20 @@
+@mixin appear-from-top-transition($timing) {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height $timing ease;
+}
+
+@mixin button-styles {
+  color: $white;
+  background-color: $light-blue;
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+
+  &:hover {
+    background-color: $dark-blue;
+  }
+
+  &:active {
+    background-color: $dark-gray;
+  }
+}
