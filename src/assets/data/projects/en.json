@@ -1,0 +1,36 @@
+{
+  "projects": [
+    {
+      "name": "Angular course",
+      "category": "Frontend",
+      "description": "Small collection of mini apps organized in modules to learn Angular",
+      "linkToFront": "https://angular-course-ianortiz.vercel.app/",
+      "image": "angular-course.png",
+      "imageAlt": "A blackjack app. Of the mini-apps of the project"
+    },
+    {
+      "name": "Youtube clone",
+      "category": "Frontend",
+      "description": "App done as a small challenge for myself. The mainpage and search bar consume the Youtube API",
+      "linkToFront": "https://youtube-clone-ianortiz.vercel.app/",
+      "image": "youtube-clone.png",
+      "imageAlt": "Capture of the app's mainpage"
+    },
+    {
+      "name": "Chat app",
+      "category": "Fullstack",
+      "description": "Project done to explore the MERN stack, as well as web sockets",
+      "linkToFront": "https://chat-app-ianortiz.vercel.app/",
+      "image": "chat-app.jpg",
+      "imageAlt": "Logos of the stack's technologies"
+    },
+    {
+      "name": "Clothes API",
+      "category": "Backend",
+      "description": "API created with Express to create garment products",
+      "linkToBack": "https://ianmarcos.github.io/clothes-api-form/",
+      "image": "clothes-api.png",
+      "imageAlt": "Capture of a form created to demo the API"
+    }
+  ]
+}
