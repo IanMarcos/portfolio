@@ -1,8 +1,9 @@
 import React from 'react';
 import { nanoid } from 'nanoid';
 import ProjectCard from './ProjectCard';
-import projectsData from 'assets/data/projects/en.json';
 import { Project } from '../types/Project';
+import strings from 'assets/strings/en.json';
+import projectsData from 'assets/data/projects/en.json';
 import 'assets/styles/ProjectsSection.scss';
 
 const ProjectsSection = () => {
@@ -10,7 +11,7 @@ const ProjectsSection = () => {
 
   return (
     <div className="projects-section">
-      <h2>Projects</h2>
+      <h2>{strings.ProjectsTitle}</h2>
       <ul>
         {projects.map((project: Project) => (
           <li key={nanoid(10)}>

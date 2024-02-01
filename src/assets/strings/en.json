@@ -3,5 +3,10 @@
   "headerSoftEngi": "Software Engineer",
   "summaryOfMyself": "Hi! I'm a developer passionate about bringing solutions to life. I'm into frontend and backend development.",
   "BtnCheckFront": "Check APP",
-  "BtnCheckBack": "Check Back/API"
+  "BtnCheckBack": "Check Back/API",
+  "ProjectsTitle": "Projects",
+  "aboutTitle": "About",
+  "contactMeTitle": "Shoot me an email!",
+  "socialLinksTitle": "Social links",
+  "aboutParagraph": "Hello! I'm Ian :). Bachelor in software engineering living in Medellin. Invent some charmy text lol"
 }
