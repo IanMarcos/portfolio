@@ -1,14 +1,9 @@
 @import '~assets/styles/common/colours';
 @import '~assets/styles/common/breakpoints';
+@import '~assets/styles/common/mixins';
 
 .main-header-container {
   background: $dark-gray;
-  // background: radial-gradient(
-  //   circle,
-  //   $main-color 0%,
-  //   $main-color 46%,
-  //   rgb(67, 157, 194) 98%
-  // );
   color: $white;
   display: flex;
   flex-wrap: wrap;
@@ -39,9 +34,7 @@
 }
 
 .summary {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
   height: 25vh;
 
   p {
