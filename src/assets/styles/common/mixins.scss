@@ -1,3 +1,9 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @mixin appear-from-top-transition($timing) {
   max-height: 0;
   overflow: hidden;

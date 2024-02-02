@@ -1,17 +1,15 @@
 @import '~assets/styles/common/colours';
+@import '~assets/styles/common/mixins';
 
 footer.mainpage-footer {
+  @include flex-center;
+  flex-direction: column;
   color: $white;
   background-color: $black;
   height: 12rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   position: relative;
 
   ul {
-    // TODO reuse social link list
     display: flex;
     column-gap: 1rem;
   }
