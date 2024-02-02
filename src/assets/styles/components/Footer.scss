@@ -1,0 +1,28 @@
+@import '~assets/styles/common/colours';
+
+footer.mainpage-footer {
+  color: $white;
+  background-color: $black;
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  ul {
+    // TODO reuse social link list
+    display: flex;
+    column-gap: 1rem;
+  }
+
+  span {
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+  }
+}
+span.last-update {
+  position: absolute;
+  bottom: 1rem;
+  font-size: 0.7rem;
+}

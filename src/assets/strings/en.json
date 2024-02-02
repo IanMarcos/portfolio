@@ -8,5 +8,8 @@
   "aboutTitle": "About",
   "contactMeTitle": "Shoot me an email!",
   "socialLinksTitle": "Social links",
-  "aboutParagraph": "Hello! I'm Ian :). Bachelor in software engineering living in Medellin. Invent some charmy text lol"
+  "aboutParagraph": "Hello! I'm Ian :). Bachelor in software engineering living in Medellin. Invent some charmy text lol",
+  "footerStack": "Website done with:",
+  "footerLastUpdated": "Last update:",
+  "footerLastUpdateDate": "February 2024"
 }
