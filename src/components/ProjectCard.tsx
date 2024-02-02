@@ -3,7 +3,7 @@ import { FaLaptop, FaLaptopCode } from 'react-icons/fa6';
 import { BiSolidServer } from 'react-icons/bi';
 import { Project, CODE_CATEGORIES } from '../types/Project';
 import strings from 'assets/strings/en.json';
-import 'assets/styles/ProjectCard.scss';
+import 'assets/styles/components/ProjectCard.scss';
 
 const ProjectCard = ({ project }: { project: Project }) => {
   const [imgSrc, setImgSrc] = useState('');
