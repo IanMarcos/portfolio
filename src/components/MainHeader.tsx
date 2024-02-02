@@ -1,7 +1,7 @@
 import React from 'react';
 import globalStrings from 'assets/strings/global.json';
 import strings from 'assets/strings/en.json';
-import 'assets/styles/MainHeader.scss';
+import 'assets/styles/components/MainHeader.scss';
 
 const MainHeader = () => {
   return (

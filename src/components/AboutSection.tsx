@@ -2,8 +2,8 @@ import React from 'react';
 import { BsLinkedin, BsGithub } from 'react-icons/bs';
 import globalStrings from 'assets/strings/global.json';
 import strings from 'assets/strings/en.json';
-import 'assets/styles/AboutSection.scss';
-import 'assets/styles/classes.scss';
+import 'assets/styles/components/AboutSection.scss';
+import 'assets/styles/common/classes.scss';
 
 const AboutSection = () => {
   return (

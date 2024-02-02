@@ -4,7 +4,7 @@ import ProjectCard from './ProjectCard';
 import { Project } from '../types/Project';
 import strings from 'assets/strings/en.json';
 import projectsData from 'assets/data/projects/en.json';
-import 'assets/styles/ProjectsSection.scss';
+import 'assets/styles/components/ProjectsSection.scss';
 
 const ProjectsSection = () => {
   const { projects } = projectsData;
