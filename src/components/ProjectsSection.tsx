@@ -10,7 +10,7 @@ const ProjectsSection = () => {
   const { projects } = projectsData;
 
   return (
-    <div className="projects-section">
+    <section className="projects-section">
       <h2>{strings.ProjectsTitle}</h2>
       <ul>
         {projects.map((project: Project) => (
@@ -19,7 +19,7 @@ const ProjectsSection = () => {
           </li>
         ))}
       </ul>
-    </div>
+    </section>
   );
 };
 
