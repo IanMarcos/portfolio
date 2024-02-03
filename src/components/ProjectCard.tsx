@@ -26,8 +26,8 @@ const ProjectCard = ({ project }: { project: Project }) => {
 
   const renderLinks = () => {
     const { linkToFront, linkToBack } = project;
-    const frontLink = <a href={linkToFront}>{strings.BtnCheckFront}</a>;
-    const backLink = <a href={linkToBack}>{strings.BtnCheckBack}</a>;
+    const frontLink = <a href={linkToFront}>{strings.btnCheckFront}</a>;
+    const backLink = <a href={linkToBack}>{strings.btnCheckBack}</a>;
 
     if (linkToFront && linkToBack) {
       return (

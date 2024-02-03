@@ -1,0 +1,15 @@
+{
+  "headerWebDev": "Desarrollador Web",
+  "headerSoftEngi": "Ingenierio de Software",
+  "summaryOfMyself": "Hola! soy un desarrollador apasionado por darle vida a soluciones de código. Trabajo tanto con frontend como backend.",
+  "btnCheckFront": "Ir a APP",
+  "btnCheckBack": "Ir a Back/API",
+  "projectsTitle": "Proyectos",
+  "aboutTitle": "Sobre mi",
+  "contactMeTitle": "Enviame un email!",
+  "socialLinksTitle": "Enlaces",
+  "aboutParagraph": "Hola! Soy Ian :). Bachelor in software engineering living in Medellin. Invent some charmy text lol",
+  "footerStack": "Sitio hecho con:",
+  "footerLastUpdated": "Actualizado en:",
+  "footerLastUpdateDate": "Febrero 2024"
+}
