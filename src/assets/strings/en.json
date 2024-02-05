@@ -11,5 +11,9 @@
   "aboutParagraph": "Hello! I'm Ian :). Bachelor in software engineering living in Medellin. Invent some charmy text lol",
   "footerStack": "Website done with:",
   "footerLastUpdated": "Last update:",
-  "footerLastUpdateDate": "February 2024"
+  "footerLastUpdateDate": "February 2024",
+  "floatingMenuButton": "Display language menu",
+  "selectLanguage": "Select a Language",
+  "lanEnglish": "English",
+  "lanSpanish": "Spanish"
 }

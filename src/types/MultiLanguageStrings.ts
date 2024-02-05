@@ -12,4 +12,8 @@ export type MultiLanguageStrings = {
   footerStack: string;
   footerLastUpdated: string;
   footerLastUpdateDate: string;
+  floatingMenuButton: string;
+  selectLanguage: string;
+  lanEnglish: string;
+  lanSpanish: string;
 };
