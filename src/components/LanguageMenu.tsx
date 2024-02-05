@@ -1,13 +1,14 @@
-import React, { useState } from 'react';
+import React, { MouseEvent, useState } from 'react';
 import { TiThMenu } from 'react-icons/ti';
 import { useMultiLanguage } from '../hooks/useMultiLanguage';
+import { Languages } from '../types/MultiLanguageStrings';
 import 'assets/styles/common/classes.scss';
 import 'assets/styles/components/LanguageMenu.scss';
 
 const LanguageMenu = () => {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
   const [isFirstTime, setIsFirstTime] = useState(true);
-  const { strings } = useMultiLanguage();
+  const { strings, setLanguage } = useMultiLanguage();
 
   const toogleMenu = () => {
     setIsFirstTime(false);
@@ -25,6 +26,21 @@ const LanguageMenu = () => {
     return classes;
   };
 
+  const handleLanguageSelect = ($event: MouseEvent<HTMLButtonElement>) => {
+    if (!($event.target instanceof HTMLButtonElement)) {
+      return;
+    }
+    const selectedLang = $event.target.dataset.lang;
+    if (
+      !selectedLang ||
+      !Object.values(Languages).includes(selectedLang as Languages)
+    ) {
+      return;
+    }
+
+    setLanguage(selectedLang as Languages);
+  };
+
   return (
     <>
       <button
@@ -39,10 +55,20 @@ const LanguageMenu = () => {
         <span>{strings.selectLanguage}</span>
         <ul>
           <li>
-            <button>{strings.lanEnglish}</button>
+            <button
+              data-lang={Languages.English}
+              onClick={handleLanguageSelect}
+            >
+              {strings.lanEnglish}
+            </button>
           </li>
           <li>
-            <button>{strings.lanSpanish}</button>
+            <button
+              data-lang={Languages.Spanish}
+              onClick={handleLanguageSelect}
+            >
+              {strings.lanSpanish}
+            </button>
           </li>
         </ul>
       </div>

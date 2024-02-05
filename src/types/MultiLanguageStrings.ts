@@ -17,3 +17,8 @@ export type MultiLanguageStrings = {
   lanEnglish: string;
   lanSpanish: string;
 };
+
+export enum Languages {
+  English = 'en',
+  Spanish = 'es',
+}

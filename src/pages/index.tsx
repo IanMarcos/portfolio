@@ -5,11 +5,12 @@ import MainHeader from '../components/MainHeader';
 import ProjectsSection from '../components/ProjectsSection';
 import AboutSection from '../components/AboutSection';
 import Footer from '../components/Footer';
+import LanguageContextProvider from '../contexts/LanguageContext';
 import 'assets/styles/common/global-styles.scss';
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
-    <>
+    <LanguageContextProvider>
       <LanguageMenu />
       <main>
         <MainHeader />
@@ -17,7 +18,7 @@ const IndexPage: React.FC<PageProps> = () => {
         <AboutSection />
         <Footer />
       </main>
-    </>
+    </LanguageContextProvider>
   );
 };
 
