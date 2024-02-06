@@ -1,49 +1,27 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby Minimal TypeScript Starter
-</h1>
+## Hello 👋
 
-## 🚀 Quick start
+If you see this, I don't really have much to tell you in this space, so I'll just list what I'm working on and explain the reason behind this project. Feel free to skip this c:
 
-1.  **Create a Gatsby site.**
+### TODO
 
-    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
+- The site looks bland and square-y. Add more vivid backgrounds and more "flare" to the site. (might take a while since it's a task more creative than technical.)
 
-    ```shell
-    # create a new Gatsby site using the minimal TypeScript starter
-    npm init gatsby -- -ts
-    ```
+### Why this came to be
 
-2.  **Start developing.**
+1. **My first portfolio was more of a CV; I wanted something less complicated, more personal, and lighthearted.**
 
-    Navigate into your new site’s directory and start it up.
+In the beginning, I considered continuing to work on my old portfolio and transforming it into a second version, but I quickly decided to start from the ground up. As context, this project is a remake of my previous portfolio, which was done in April 2022, also using Gatsby but with JS and CSS. This ties to the second reason:
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+2. **I wanted to have an up-front way of showing that I have skills in both Typescript and Sass.**
 
-3.  **Open the code and start customizing!**
+Now, Gatsby allows you to seemlessly migrate from JS to TS, and since all valid CSS code is also valid Sass code, migrating from CSS to Sass should've been easy as well. So, why not just refactor everything? Simple:
 
-    Your site is now running at http://localhost:8000!
+3. **There was so much code to rename, reorganise, and delete that I felt it was less work overall to simply start from zero.**
 
-    Edit `src/pages/index.tsx` to see your site update in real-time!
+And the refactor I wanted to do didn't just imply adding types and a new syntax to my CSS classes.
 
-4.  **Learn more**
+4. **I wanted to have cleaner and more reusable code, eliminate as many magic strings as possible, add support to multiple languages, and make it easier to add and update information to the page.**
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+In this iteration of my portfolio, if I want to add a recent project, I simply have to add the picture and the data to a JSON. If I want to change the wording of a component, I just change it in a JSON, rather than having to remember which component I need to change and searching for the text inside.
 
-## 🚀 Quick start (Netlify)
-
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
-
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
+I'm pretty happy with how it's turning out. If you're actually reading this, I hope you like it and think that it looks somewhat fancy.
