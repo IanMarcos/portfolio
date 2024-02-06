@@ -3,12 +3,10 @@ import { nanoid } from 'nanoid';
 import ProjectCard from './ProjectCard';
 import { Project } from '../types/Project';
 import { useMultiLanguage } from '../hooks/useMultiLanguage';
-import projectsData from 'assets/data/projects/en.json';
 import 'assets/styles/components/ProjectsSection.scss';
 
 const ProjectsSection = () => {
-  const { strings } = useMultiLanguage();
-  const { projects } = projectsData;
+  const { strings, projects } = useMultiLanguage();
 
   return (
     <section className="projects-section">

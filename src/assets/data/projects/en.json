@@ -6,7 +6,7 @@
       "description": "Small collection of mini apps organized in modules to learn Angular",
       "linkToFront": "https://angular-course-ianortiz.vercel.app/",
       "image": "angular-course.png",
-      "imageAlt": "A blackjack app. Of the mini-apps of the project"
+      "imageAlt": "Angular logo with the words 'Angular 15 course' underneath"
     },
     {
       "name": "Youtube clone",
@@ -14,7 +14,7 @@
       "description": "App done as a small challenge for myself. The mainpage and search bar consume the Youtube API",
       "linkToFront": "https://youtube-clone-ianortiz.vercel.app/",
       "image": "youtube-clone.png",
-      "imageAlt": "Capture of the app's mainpage"
+      "imageAlt": "Youtube logo with the word 'clone' underneath"
     },
     {
       "name": "Chat app",
@@ -22,7 +22,7 @@
       "description": "Project done to explore the MERN stack, as well as web sockets",
       "linkToFront": "https://chat-app-ianortiz.vercel.app/",
       "image": "chat-app.jpg",
-      "imageAlt": "Logos of the stack's technologies"
+      "imageAlt": "Stcok image of a chat"
     },
     {
       "name": "Clothes API",
