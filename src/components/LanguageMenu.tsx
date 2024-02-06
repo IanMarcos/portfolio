@@ -4,6 +4,7 @@ import { useMultiLanguage } from '../hooks/useMultiLanguage';
 import { Languages } from '../types/MultiLanguageStrings';
 import 'assets/styles/common/classes.scss';
 import 'assets/styles/components/LanguageMenu.scss';
+import { isStringInStringEnum } from '../utils/strings';
 
 const LanguageMenu = () => {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
@@ -31,14 +32,12 @@ const LanguageMenu = () => {
       return;
     }
     const selectedLang = $event.target.dataset.lang;
-    if (
-      !selectedLang ||
-      !Object.values(Languages).includes(selectedLang as Languages)
-    ) {
+    if (!selectedLang || !isStringInStringEnum(selectedLang, Languages)) {
       return;
     }
 
     setLanguage(selectedLang as Languages);
+    localStorage.setItem('language', selectedLang);
   };
 
   return (

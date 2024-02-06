@@ -1,5 +1,6 @@
 import React, { ReactNode, createContext, useContext, useState } from 'react';
 import { Languages } from '../types/MultiLanguageStrings';
+import { isStringInStringEnum } from '../utils/strings';
 
 type LanguagesUnion = `${Languages}`; // 'en'|'es'|...
 type LanguageContext = {
@@ -10,7 +11,18 @@ type LanguageContext = {
 const LanguageContext = createContext<LanguageContext | null>(null);
 
 const LanguageContextProvider = ({ children }: { children: ReactNode }) => {
-  const [language, setLanguage] = useState<LanguagesUnion>(Languages.English);
+  let defaultValue;
+  const localStorageLanguage = localStorage.getItem('language');
+
+  if (
+    localStorageLanguage &&
+    isStringInStringEnum(localStorageLanguage, Languages)
+  ) {
+    defaultValue = localStorageLanguage as Languages;
+  } else {
+    defaultValue = Languages.English;
+  }
+  const [language, setLanguage] = useState<LanguagesUnion>(defaultValue);
 
   return (
     <LanguageContext.Provider
