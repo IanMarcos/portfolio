@@ -1,10 +1,10 @@
 import React, { MouseEvent, useState } from 'react';
-import { TiThMenu } from 'react-icons/ti';
+import { PiTranslateBold } from 'react-icons/pi';
 import { useMultiLanguage } from '../hooks/useMultiLanguage';
 import { Languages } from '../types/MultiLanguageStrings';
+import { isStringInStringEnum } from '../utils/strings';
 import 'assets/styles/common/classes.scss';
 import 'assets/styles/components/LanguageMenu.scss';
-import { isStringInStringEnum } from '../utils/strings';
 
 const LanguageMenu = () => {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
@@ -47,7 +47,7 @@ const LanguageMenu = () => {
         title={strings.floatingMenuButton}
         onClick={toogleMenu}
       >
-        <TiThMenu size={30} />
+        <PiTranslateBold size={30} />
         <span className="hidden">{strings.floatingMenuButton}</span>
       </button>
       <div className={getMenuClasses()} onClick={toogleMenu}>
