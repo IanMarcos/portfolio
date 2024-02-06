@@ -1,9 +1,11 @@
 import React from 'react';
+import { useMultiLanguage } from '../hooks/useMultiLanguage';
 import globalStrings from 'assets/strings/global.json';
-import strings from 'assets/strings/en.json';
 import 'assets/styles/components/MainHeader.scss';
 
 const MainHeader = () => {
+  const { strings } = useMultiLanguage();
+
   return (
     <>
       <div className="main-header-container">

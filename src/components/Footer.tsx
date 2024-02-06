@@ -1,6 +1,6 @@
 import React from 'react';
 import { SiGatsby, SiReact, SiSass, SiTypescript } from 'react-icons/si';
-import strings from 'assets/strings/en.json';
+import { useMultiLanguage } from '../hooks/useMultiLanguage';
 import 'assets/styles/common/classes.scss';
 import 'assets/styles/components/Footer.scss';
 
@@ -13,6 +13,8 @@ const enum STACK {
 }
 
 const Footer = () => {
+  const { strings } = useMultiLanguage();
+
   return (
     <footer className="mainpage-footer">
       <span>{strings.footerStack}</span>

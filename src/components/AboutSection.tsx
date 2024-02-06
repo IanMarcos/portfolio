@@ -1,10 +1,12 @@
 import React from 'react';
 import SocialLinksList from './SocialLinksList';
 import globalStrings from 'assets/strings/global.json';
-import strings from 'assets/strings/en.json';
+import { useMultiLanguage } from '../hooks/useMultiLanguage';
 import 'assets/styles/components/AboutSection.scss';
 
 const AboutSection = () => {
+  const { strings } = useMultiLanguage();
+
   return (
     <section className="about-section">
       <h2>{strings.aboutTitle}</h2>
