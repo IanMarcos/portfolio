@@ -8,11 +8,16 @@ type LanguageContext = {
   setLanguage: React.Dispatch<React.SetStateAction<LanguagesUnion>>;
 };
 
+const windowGlobal = typeof window !== 'undefined' && window;
 const LanguageContext = createContext<LanguageContext | null>(null);
 
 const LanguageContextProvider = ({ children }: { children: ReactNode }) => {
   let defaultValue;
-  const localStorageLanguage = localStorage.getItem('language');
+  let localStorageLanguage;
+
+  if (windowGlobal) {
+    localStorageLanguage = windowGlobal.localStorage.getItem('language');
+  }
 
   if (
     localStorageLanguage &&
