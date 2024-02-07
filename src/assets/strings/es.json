@@ -1,0 +1,19 @@
+{
+  "headerWebDev": "Desarrollador Web",
+  "headerSoftEngi": "Ingenierio de Software",
+  "summaryOfMyself": "Hola! soy un desarrollador apasionado por darle vida a soluciones de código. Trabajo tanto con frontend como backend.",
+  "btnCheckFront": "Ir a APP",
+  "btnCheckBack": "Ir a Back/API",
+  "projectsTitle": "Proyectos",
+  "aboutTitle": "Sobre mi",
+  "contactMeTitle": "Enviame un email!",
+  "socialLinksTitle": "Enlaces",
+  "aboutParagraph": "Hola! Soy Ian :). Ingeniero de sistemas viviendo in Medellin. Actualmente exploro el mundo del desarrollo web, pero ese no es necesariamente el foco de mi carrera. Lo que realmente amo es programar soluciones; imaginar algo, desarrollarlo, y que resulte tal y como se pensó. El desarrollo web se siente como el area que más crecimiento me brindará en esta etapa de mi carrera, pero definitivamente me veo explorando otras areas a largo plazo. 🧑‍💻",
+  "footerStack": "Sitio hecho con:",
+  "footerLastUpdated": "Actualizado en:",
+  "footerLastUpdateDate": "Febrero 2024",
+  "floatingMenuButton": "Mostrar idiomas",
+  "selectLanguage": "Selecciona un idioma",
+  "lanEnglish": "Inglés",
+  "lanSpanish": "Español"
+}

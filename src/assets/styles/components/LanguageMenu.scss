@@ -1,0 +1,86 @@
+@import '~assets/styles/common/colours';
+@import '~assets/styles/common/mixins';
+
+@mixin floating-menu($multiplier) {
+  position: fixed;
+  z-index: 100;
+  top: $multiplier * 2rem;
+  right: 2rem;
+}
+
+.floating-menu-btn {
+  @include floating-menu(1);
+  @include flex-center;
+  border-radius: 100%;
+  height: 3rem;
+  width: 3rem;
+  color: $white;
+  background-color: rgba($color: $black, $alpha: 0.66);
+  backdrop-filter: blur(0.25rem);
+}
+
+.language-menu {
+  @include floating-menu(2.5);
+  color: $white;
+  background-color: rgba($color: $black, $alpha: 0.4);
+  backdrop-filter: blur(0.25rem);
+  border-radius: 1rem;
+  padding: 0.75rem 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  @include box-shadow;
+  transform: translateX(125%);
+
+  li {
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+
+    &:hover {
+      background-color: rgba($color: $white, $alpha: 0.4);
+    }
+
+    &:active {
+      background-color: rgba($color: $white, $alpha: 0.75);
+    }
+  }
+
+  button {
+    width: 100%;
+    height: 100%;
+    color: $white;
+    background-color: rgba($color: $white, $alpha: 0);
+  }
+}
+
+.show-language-menu {
+  animation: menu-appear 1s ease;
+  transform: translateX(0);
+}
+
+.hide-language-menu {
+  animation: menu-disappear 1s ease;
+  transform: translateX(125%);
+}
+
+@keyframes menu-appear {
+  0% {
+    transform: translateX(125%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes menu-disappear {
+  0% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(125%);
+    opacity: 0;
+  }
+}

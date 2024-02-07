@@ -1,0 +1,31 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin appear-from-top-transition($timing) {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height $timing ease;
+}
+
+@mixin button-styles {
+  color: $white;
+  background-color: $light-blue;
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+
+  &:hover {
+    background-color: $dark-blue;
+  }
+
+  &:active {
+    background-color: $dark-gray;
+  }
+}
+
+@mixin box-shadow {
+  box-shadow: 0 4px 8px 0 rgba($color: $black, $alpha: 0.2),
+    0 6px 20px 0 rgba($color: $black, $alpha: 0.2);
+}
