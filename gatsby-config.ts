@@ -2,10 +2,10 @@ import type { GatsbyConfig } from 'gatsby';
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: 'portfolio',
-    siteUrl: 'https://www.yourdomain.tld',
+    title: 'Portfolio',
+    siteUrl: 'https://ianmarcos.github.io/portfolio',
   },
-
+  pathPrefix: '/portfolio',
   graphqlTypegen: true,
   plugins: [
     { resolve: 'gatsby-plugin-sass' },
