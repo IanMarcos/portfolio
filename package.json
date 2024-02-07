@@ -12,7 +12,9 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "deploy:ci": "gatsby build --prefix-paths && gh-pages -d public -r https://$GH_TOKEN@github.com/IanMarcos/repo.git"
   },
   "dependencies": {
     "gatsby": "^5.12.12",
@@ -29,6 +31,7 @@
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
     "gatsby-plugin-root-import": "^2.0.9",
+    "gh-pages": "^6.1.1",
     "typescript": "^5.1.6"
   }
 }
