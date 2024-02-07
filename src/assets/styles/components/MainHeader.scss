@@ -35,13 +35,20 @@
 
 .summary {
   @include flex-center;
-  height: 25vh;
+  min-height: 25vh;
 
   p {
-    font-size: 1.3rem;
+    font-size: 1.15rem;
     font-weight: 600;
     font-style: italic;
-    width: min($md, 70%);
+    padding: 2.5rem 0;
+    width: min($md, 80%);
+  }
+}
+
+@media (min-width: $md) {
+  .summary p {
+    font-size: 1.3rem;
   }
 }
 
