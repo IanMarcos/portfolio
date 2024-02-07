@@ -8,15 +8,15 @@ footer.mainpage-footer {
   background-color: $black;
   height: 12rem;
   position: relative;
+  font-size: 0.8rem;
 
   ul {
     display: flex;
     column-gap: 1rem;
   }
 
-  span {
+  span.done-with {
     margin-bottom: 0.5rem;
-    font-size: 0.8rem;
   }
 }
 span.last-update {
