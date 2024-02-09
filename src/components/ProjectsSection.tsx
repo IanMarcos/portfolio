@@ -3,7 +3,7 @@ import ProjectCard from './ProjectCard';
 import { Project } from '../types/Project';
 import { useMultiLanguage } from '../hooks/useMultiLanguage';
 import { RigthDiagonal } from './UI/Diagonals';
-import 'assets/styles/components/ProjectsSection.scss';
+import 'styles/components/ProjectsSection.scss';
 
 const ProjectsSection = () => {
   const { strings, projects } = useMultiLanguage();

@@ -2,7 +2,7 @@ import React from 'react';
 import { useMultiLanguage } from '../hooks/useMultiLanguage';
 import globalStrings from 'assets/strings/global.json';
 import { LeftDiagonal, RigthDiagonal } from './UI/Diagonals';
-import 'assets/styles/components/MainHeader.scss';
+import 'styles/components/MainHeader.scss';
 
 const MainHeader = () => {
   const { strings } = useMultiLanguage();

@@ -1,8 +1,8 @@
 import React from 'react';
 import { SiGatsby, SiReact, SiSass, SiTypescript } from 'react-icons/si';
 import { useMultiLanguage } from '../hooks/useMultiLanguage';
-import 'assets/styles/common/classes.scss';
-import 'assets/styles/components/Footer.scss';
+import 'styles/common/classes.scss';
+import 'styles/components/Footer.scss';
 
 const ICON_SIZE = 28;
 const enum Stack {

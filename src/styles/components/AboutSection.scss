@@ -1,6 +1,6 @@
-@import '~assets/styles/common/colours';
-@import '~assets/styles/common/breakpoints';
-@import '~assets/styles/common/mixins';
+@import '~styles/common/colours';
+@import '~styles/common/breakpoints';
+@import '~styles/common/mixins';
 
 .about-section {
   @include flex-center;
