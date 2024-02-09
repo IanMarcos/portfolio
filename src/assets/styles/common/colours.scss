@@ -10,3 +10,12 @@ $light-grey: rgb(187, 187, 187);
 $bkg-color: $white;
 $font-color: $black;
 $footer-bkg: rgb(223, 222, 217);
+
+$colours: (
+  'lblue': $light-blue,
+  'dblue': $dark-blue,
+  'black': $black,
+  'white': $white,
+  'dgrey': $dark-grey,
+  'lgrey': $light-grey,
+);
