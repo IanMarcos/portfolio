@@ -1,8 +1,8 @@
 import React from 'react';
 import { BsLinkedin, BsGithub } from 'react-icons/bs';
 import globalStrings from 'assets/strings/global.json';
-import 'assets/styles/common/classes.scss';
-import 'assets/styles/components/SocialLinksList.scss';
+import 'styles/common/classes.scss';
+import 'styles/components/SocialLinksList.scss';
 
 const enum SOCIAL_MEDIAS {
   LINKEDIN = 'LinkedIn',

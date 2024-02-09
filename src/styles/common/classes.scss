@@ -1,0 +1,24 @@
+@import 'colours';
+
+.hidden {
+  display: inline-block;
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+
+@each $name, $colour in $colours {
+  @for $i from 1 through 10 {
+    svg.diagonal-#{$i}-#{$name} {
+      height: $i * 1vw;
+      width: 100%;
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+
+      & > polygon {
+        fill: $colour;
+      }
+    }
+  }
+}

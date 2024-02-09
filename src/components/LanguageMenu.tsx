@@ -3,8 +3,8 @@ import { PiTranslateBold } from 'react-icons/pi';
 import { useMultiLanguage } from '../hooks/useMultiLanguage';
 import { Languages } from '../types/MultiLanguageStrings';
 import { isStringInStringEnum } from '../utils/strings';
-import 'assets/styles/common/classes.scss';
-import 'assets/styles/components/LanguageMenu.scss';
+import 'styles/common/classes.scss';
+import 'styles/components/LanguageMenu.scss';
 
 const LanguageMenu = () => {
   const [isMenuVisible, setIsMenuVisible] = useState(false);

@@ -1,4 +1,4 @@
-@import '~assets/styles/common/colours';
+@import '~styles/common/colours';
 
 .socials-list {
   display: flex;
@@ -12,7 +12,7 @@
     }
 
     &:active {
-      color: $light-gray;
+      color: $light-grey;
     }
   }
 

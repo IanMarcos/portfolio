@@ -6,7 +6,7 @@ import ProjectsSection from '../components/ProjectsSection';
 import AboutSection from '../components/AboutSection';
 import Footer from '../components/Footer';
 import LanguageContextProvider from '../contexts/LanguageContext';
-import 'assets/styles/common/global-styles.scss';
+import 'styles/common/global-styles.scss';
 
 const IndexPage: React.FC<PageProps> = () => {
   return (

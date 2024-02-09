@@ -1,5 +1,5 @@
-@import '~assets/styles/common/colours';
-@import '~assets/styles/common/mixins';
+@import '~styles/common/colours';
+@import '~styles/common/mixins';
 
 @mixin floating-menu($multiplier) {
   position: fixed;

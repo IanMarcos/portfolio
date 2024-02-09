@@ -2,7 +2,7 @@ import React from 'react';
 import SocialLinksList from './SocialLinksList';
 import globalStrings from 'assets/strings/global.json';
 import { useMultiLanguage } from '../hooks/useMultiLanguage';
-import 'assets/styles/components/AboutSection.scss';
+import 'styles/components/AboutSection.scss';
 
 const AboutSection = () => {
   const { strings } = useMultiLanguage();
