@@ -2,7 +2,8 @@ import React from 'react';
 import ProjectCard from './ProjectCard';
 import { Project } from '../types/Project';
 import { useMultiLanguage } from '../hooks/useMultiLanguage';
-import 'assets/styles/components/ProjectsSection.scss';
+import { RigthDiagonal } from './UI/Diagonals';
+import 'styles/components/ProjectsSection.scss';
 
 const ProjectsSection = () => {
   const { strings, projects } = useMultiLanguage();
@@ -22,6 +23,7 @@ const ProjectsSection = () => {
           </li>
         ))}
       </ul>
+      <RigthDiagonal className="diagonal-4-lblue" />
     </section>
   );
 };

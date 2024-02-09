@@ -1,9 +1,9 @@
-@import '~assets/styles/common/colours';
-@import '~assets/styles/common/breakpoints';
-@import '~assets/styles/common/mixins';
+@import '~styles/common/colours';
+@import '~styles/common/breakpoints';
+@import '~styles/common/mixins';
 
-.main-header-container {
-  background: $dark-gray;
+.hero {
+  background: $dark-grey;
   color: $white;
   display: flex;
   flex-wrap: wrap;
@@ -11,6 +11,7 @@
   align-items: center;
   justify-content: space-around;
   height: min(85vh, 980px);
+  position: relative;
 
   h1 {
     font-size: 2.7rem;
@@ -35,18 +36,27 @@
 
 .summary {
   @include flex-center;
-  height: 25vh;
+  min-height: 25vh;
+  position: relative;
+  padding-bottom: 2rem;
 
   p {
-    font-size: 1.3rem;
+    font-size: 1.15rem;
     font-weight: 600;
     font-style: italic;
-    width: min($md, 70%);
+    padding: 2.5rem 0;
+    width: min($md, 80%);
+  }
+}
+
+@media (min-width: $md) {
+  .summary p {
+    font-size: 1.3rem;
   }
 }
 
 @media (min-width: $lg) {
-  .main-header-container {
+  .hero {
     h1 {
       font-size: 3.5rem;
     }
@@ -54,5 +64,9 @@
     p {
       font-size: 2.3rem;
     }
+  }
+
+  .summary {
+    padding-bottom: 3rem;
   }
 }

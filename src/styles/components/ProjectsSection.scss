@@ -1,9 +1,11 @@
-@import '~assets/styles/common/colours';
+@import '~styles/common/colours';
+@import '~styles/common/breakpoints';
 
 .projects-section {
-  padding: 2rem 4rem;
+  padding: 6rem 3rem 8rem 3rem;
   background-color: $dark-blue;
   color: $white;
+  position: relative;
 
   h2 {
     font-size: 2.5rem;
@@ -16,5 +18,11 @@
     row-gap: 5rem;
     flex-wrap: wrap;
     margin: 3rem 0;
+  }
+}
+
+@media only screen and (min-width: $md) {
+  .projects-section {
+    padding: 6rem 4rem 8rem 4rem;
   }
 }

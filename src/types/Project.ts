@@ -1,10 +1,10 @@
-export const enum CODE_CATEGORIES {
-  FULLSTACK = 'Fullstack',
-  BACKEND = 'Backend',
-  FRONTEND = 'Frontend',
+export const enum CodeCategories {
+  Full = 'Fullstack',
+  Be = 'Backend',
+  Fe = 'Frontend',
 }
 
-type ProjectCategory = `${CODE_CATEGORIES}`;
+type ProjectCategory = `${CodeCategories}`;
 
 export type Project = {
   name: string;

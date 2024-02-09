@@ -3,10 +3,19 @@ $light-blue: rgb(4, 139, 194);
 $dark-blue: rgb(27, 67, 114);
 $black: rgb(33, 33, 33);
 $white: rgb(247, 244, 240);
-$dark-gray: rgb(41, 48, 53);
-$light-gray: rgb(187, 187, 187);
+$dark-grey: rgb(41, 48, 53);
+$light-grey: rgb(187, 187, 187);
 
 /*==========Ligth theme==========*/
 $bkg-color: $white;
 $font-color: $black;
 $footer-bkg: rgb(223, 222, 217);
+
+$colours: (
+  'lblue': $light-blue,
+  'dblue': $dark-blue,
+  'black': $black,
+  'white': $white,
+  'dgrey': $dark-grey,
+  'lgrey': $light-grey,
+);

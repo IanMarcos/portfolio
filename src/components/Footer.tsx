@@ -1,15 +1,15 @@
 import React from 'react';
 import { SiGatsby, SiReact, SiSass, SiTypescript } from 'react-icons/si';
 import { useMultiLanguage } from '../hooks/useMultiLanguage';
-import 'assets/styles/common/classes.scss';
-import 'assets/styles/components/Footer.scss';
+import 'styles/common/classes.scss';
+import 'styles/components/Footer.scss';
 
 const ICON_SIZE = 28;
-const enum STACK {
-  GATSBY = 'Gatsby',
-  REACT = 'React',
-  TYPESCRIPT = 'Typescript',
-  SASS = 'Sass',
+const enum Stack {
+  Gatsby = 'Gatsby',
+  React = 'React',
+  Typescript = 'Typescript',
+  Sass = 'Sass',
 }
 
 const Footer = () => {
@@ -17,22 +17,22 @@ const Footer = () => {
 
   return (
     <footer className="mainpage-footer">
-      <span>{strings.footerStack}</span>
+      <span className="done-with">{strings.footerStack}</span>
       <ul>
-        <li title={STACK.GATSBY}>
-          <span className="hidden">{STACK.GATSBY}</span>
+        <li title={Stack.Gatsby}>
+          <span className="hidden">{Stack.Gatsby}</span>
           <SiGatsby size={ICON_SIZE} />
         </li>
-        <li title={STACK.REACT}>
-          <span className="hidden">{STACK.REACT}</span>
+        <li title={Stack.React}>
+          <span className="hidden">{Stack.React}</span>
           <SiReact size={ICON_SIZE} />
         </li>
-        <li title={STACK.TYPESCRIPT}>
-          <span className="hidden">{STACK.TYPESCRIPT}</span>
+        <li title={Stack.Typescript}>
+          <span className="hidden">{Stack.Typescript}</span>
           <SiTypescript size={ICON_SIZE} />
         </li>
-        <li title={STACK.SASS}>
-          <span className="hidden">{STACK.SASS}</span>
+        <li title={Stack.Sass}>
+          <span className="hidden">{Stack.Sass}</span>
           <SiSass size={ICON_SIZE} />
         </li>
       </ul>

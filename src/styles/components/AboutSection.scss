@@ -1,11 +1,11 @@
-@import '~assets/styles/common/colours';
-@import '~assets/styles/common/breakpoints';
-@import '~assets/styles/common/mixins';
+@import '~styles/common/colours';
+@import '~styles/common/breakpoints';
+@import '~styles/common/mixins';
 
 .about-section {
   @include flex-center;
   flex-direction: column;
-  padding: 2rem 4rem;
+  padding: 2.5rem 2.25rem;
   min-height: 50vh;
   background-color: $light-blue;
   color: $white;
@@ -18,6 +18,10 @@
     font-size: 1.5rem;
     margin-bottom: 0.75rem;
   }
+}
+
+.about-content {
+  max-width: $lg;
 }
 
 .contact-info {
@@ -38,17 +42,23 @@
 
 .about-me {
   background-color: $white;
-  color: $dark-gray;
+  color: $dark-grey;
   margin: 2rem 0;
   padding: 1.5rem 2rem;
   border-radius: 1.5rem;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 300;
+}
+
+@media only screen and (min-width: $md) {
+  .about-section {
+    padding: 2.5rem 4rem;
+  }
 }
 
 @media only screen and (min-width: $lg) {
   .about-section {
-    padding: 2rem 8rem;
+    padding: 2.5rem 8rem;
   }
 
   .about-content {
@@ -61,16 +71,12 @@
   .contact-info {
     grid-column: span 1 / span 1;
     margin: 0;
+    grid-template: repeat(2, 1fr) / auto;
   }
 
   .about-me {
+    font-size: 1.25rem;
     grid-column: span 2 / span 2;
     margin: 0;
-  }
-}
-
-@media only screen and (min-width: $lg) {
-  .contact-info {
-    grid-template: repeat(2, 1fr) / auto;
   }
 }
