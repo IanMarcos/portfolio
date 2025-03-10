@@ -1,6 +1,14 @@
 {
   "projects": [
     {
+      "name": "Portal Emonkey",
+      "category": "Frontend",
+      "description": "Sitio web para solicitar y administrar tus créditos emonkey",
+      "linkToFront": "https://emonkey.com.co/",
+      "image": "emonkey.png",
+      "imageAlt": "Captura de la vista móvil de la landing page"
+    },
+    {
       "name": "Curso de Angular",
       "category": "Frontend",
       "description": "Colección of mini apps organizadas en módulos para aprender Angular",
