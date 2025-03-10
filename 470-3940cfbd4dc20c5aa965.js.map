@@ -1,0 +1,1 @@
+{"version":3,"file":"470-3940cfbd4dc20c5aa965.js","mappings":"kHAAA,UAAe,IAA0B,yD","sources":["webpack://portfolio/./src/assets/images/clothes-api.png"],"sourcesContent":["export default __webpack_public_path__ + \"static/clothes-api-4b8e0469ee206e218090edd79e8ab82e.png\";"],"names":[],"sourceRoot":""}

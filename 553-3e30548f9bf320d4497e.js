@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[553],{9553:function(c,f,p){p.r(f),f.default=p.p+"static/chat-app-6d9137fdfbcb2721c77d9d073d4f037c.jpg"}}]);
+//# sourceMappingURL=553-3e30548f9bf320d4497e.js.map

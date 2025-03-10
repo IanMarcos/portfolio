@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[470],{5470:function(e,t,o){o.r(t),t.default=o.p+"static/clothes-api-4b8e0469ee206e218090edd79e8ab82e.png"}}]);
+//# sourceMappingURL=470-3940cfbd4dc20c5aa965.js.map

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[834],{6834:function(f,c,e){e.r(c),c.default=e.p+"static/angular-course-e6b1fddcb6bf15ec2f7343a015dc7a0f.png"}}]);
+//# sourceMappingURL=834-c6fb21396fce9546e59e.js.map
