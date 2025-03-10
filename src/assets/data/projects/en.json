@@ -1,6 +1,14 @@
 {
   "projects": [
     {
+      "name": "Emonkey portal",
+      "category": "Frontend",
+      "description": "Website to request and manage your credits",
+      "linkToFront": "https://emonkey.com.co/",
+      "image": "emonkey.png",
+      "imageAlt": "Screenshot of the mobile view of the landing page"
+    },
+    {
       "name": "Angular course",
       "category": "Frontend",
       "description": "Small collection of mini apps organized in modules to learn Angular",
